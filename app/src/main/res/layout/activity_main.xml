@@ -1,0 +1,96 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#FFFFFF"
+    tools:context=".MainActivity">
+
+    <TextView
+        android:id="@+id/Nombretxt"
+        android:layout_width="118dp"
+        android:layout_height="38dp"
+        android:layout_marginStart="56dp"
+        android:layout_marginTop="76dp"
+        android:text="Nombresasa"
+        android:textSize="20sp"
+        android:textStyle="bold"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <EditText
+        android:id="@+id/txtlabelNombre"
+        android:layout_width="297dp"
+        android:layout_height="56dp"
+        android:layout_marginStart="56dp"
+        android:layout_marginBottom="548dp"
+        android:autofillHints=""
+        android:ems="10"
+        android:inputType="text"
+        android:hint="Ingresa tu nombre"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <TextView
+        android:id="@+id/apellidotxt"
+        android:layout_width="118dp"
+        android:layout_height="38dp"
+        android:layout_marginStart="56dp"
+        android:layout_marginTop="18dp"
+        android:hint="Apellido"
+        android:textSize="20sp"
+        android:textStyle="bold"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/txtlabelNombre" />
+
+    <TextView
+        android:id="@+id/generotxt"
+        android:layout_width="118dp"
+        android:layout_height="38dp"
+        android:layout_marginStart="56dp"
+        android:layout_marginTop="21dp"
+        android:text="Genero"
+        android:textSize="20sp"
+        android:textStyle="bold"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/txtlabelApellido" />
+
+    <EditText
+        android:id="@+id/txtlabelApellido"
+        android:layout_width="297dp"
+        android:layout_height="56dp"
+        android:layout_marginStart="56dp"
+        android:layout_marginTop="20dp"
+        android:layout_marginBottom="416dp"
+        android:autofillHints=""
+        android:ems="10"
+        android:inputType="text"
+        android:hint="Ingresa tu apellido"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/apellidotxt" />
+
+    <Button
+        android:id="@+id/btnA1"
+        android:layout_width="183dp"
+        android:layout_height="60dp"
+        android:layout_marginStart="115dp"
+        android:layout_marginEnd="113dp"
+        android:layout_marginBottom="35dp"
+        android:text="Enviar"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:rippleColor="#673AB7" />
+
+    <Spinner
+        android:id="@+id/generoSpinner"
+        android:layout_width="301dp"
+        android:layout_height="48dp"
+        android:layout_marginStart="56dp"
+        android:layout_marginTop="21dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/generotxt" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>
